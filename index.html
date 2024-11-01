@@ -28,29 +28,50 @@
   <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
     <!-- Side bar section -->
     <header
+      id="sideMenu"
       class="relative hidden lg:block lg:fixed top-0 left-0 bottom-0 lg:w-80 bg-primary px-4"
     >
       <div class="space-y-10">
-        <h2
-          class="font-exo text-3xl font-bold flex justify-start items-center gap-2 mt-5"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-10 text-purple-600"
+        <div class="flex justify-between items-center gap-10 mt-5">
+          <h2
+            class="font-exo text-3xl font-bold flex justify-start items-center gap-2"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-            />
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10 text-purple-600"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
 
-          Priyo Mail
-        </h2>
+            Priyo Mail
+          </h2>
+
+          <!-- hum icon -->
+          <div id="closeIcon" class="flex lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+        </div>
 
         <nav>
           <ul class="space-y-4">
@@ -222,7 +243,7 @@
         </div>
 
         <!-- hum icon -->
-        <div class="flex lg:hidden">
+        <div id="humIcon" class="flex lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

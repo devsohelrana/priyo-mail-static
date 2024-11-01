@@ -28,8 +28,22 @@ darkModeToggle.addEventListener("click", toggleDarkMode);
 
 // Navigation Menu
 const humIcon = document.querySelector("#humIcon");
-const navMenu = document.querySelector("#navMenu");
+const closeIcon = document.querySelector("#closeIcon");
+const navMenu = document.querySelector("#sideMenu");
+
+// Select all <li> or <a> elements inside the navMenu
+const menuItems = navMenu.querySelectorAll("li, a");
 
 humIcon.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
+  navMenu.classList.add("active");
+});
+closeIcon.addEventListener("click", () => {
+  navMenu.classList.remove("active");
+});
+
+// Add event listener to all menu items
+menuItems.forEach(item => {
+  item.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
 });
