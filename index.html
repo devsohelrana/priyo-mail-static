@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temp Mail Server</title>
+
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <!-- Side bar section -->
+    <header
+      class="relative hidden lg:block lg:fixed top-0 left-0 bottom-0 lg:w-80 bg-primary px-4"
+    >
+      <div class="space-y-10">
+        <h2
+          class="font-exo text-3xl font-bold flex justify-start items-center gap-2 mt-5"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-10 text-purple-600"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            />
+          </svg>
+
+          Priyo Mail
+        </h2>
+
+        <nav>
+          <ul class="space-y-4">
+            <li
+              class="bg-primary-hover text-white text-lg px-2 py-1 rounded-lg transition-all duration-300"
+            >
+              <a href="#" class="flex justify-start gap-2 font-poppins">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
+                  />
+                </svg>
+                <span> Inbox </span>
+              </a>
+            </li>
+            <li
+              class="text-black text-lg px-2 py-1 rounded-lg hover:bg-primary-hover hover:text-white transition-all duration-300"
+            >
+              <a href="#" class="flex justify-start gap-2 font-poppins">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                  />
+                </svg>
+
+                <span> API </span>
+              </a>
+            </li>
+            <li
+              class="text-black text-lg px-2 py-1 rounded-lg hover:bg-primary-hover hover:text-white transition-all duration-300"
+            >
+              <a href="#" class="flex justify-start gap-2 font-poppins">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+                  />
+                </svg>
+
+                <span> FAQ </span>
+              </a>
+            </li>
+            <li
+              class="text-black text-lg px-2 py-1 rounded-lg hover:bg-primary-hover hover:text-white transition-all duration-300"
+            >
+              <a href="#" class="flex justify-start gap-2 font-poppins">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z"
+                  />
+                </svg>
+
+                <span> Privacy </span>
+              </a>
+            </li>
+            <li
+              class="text-black text-lg px-2 py-1 rounded-lg hover:bg-primary-hover hover:text-white transition-all duration-300"
+            >
+              <a href="#" class="flex justify-start gap-2 font-poppins">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                  />
+                </svg>
+
+                <span> Feedback </span>
+              </a>
+            </li>
+            <li
+              class="text-black text-lg px-2 py-1 rounded-lg hover:bg-primary-hover hover:text-white transition-all duration-300"
+            >
+              <a href="#" class="flex justify-start gap-2 font-poppins">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                  />
+                </svg>
+
+                <span> Contacts </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main class="relative ml-0 lg:ml-80 overflow-hidden">
+      <!-- color pattern -->
+      <div
+        class="absolute left-2/4 -translate-x-2/4 w-96 h-32 bg-[#1C1FC2] rounded-full blur-[150px]"
+      ></div>
+
+      <!-- top bar -->
+      <section
+        class="relative w-full h-16 bg-primary flex justify-between items-center px-4"
+      >
+        <!-- mail -->
+        <div class="hidden lg:flex justify-start items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z"
+            />
+          </svg>
+
+          <span>leslej@priyomail.uk</span>
+        </div>
+
+        <!-- hum icon -->
+        <div class="flex lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+            />
+          </svg>
+        </div>
+
+        <!-- top menu -->
+        <div>
+          <ul class="flex justify-end items-center gap-4">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"
+                />
+              </svg>
+            </li>
+            <li
+              id="darkModeToggle"
+              class="w-8 h-8 bg-[#374151] rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <svg
+                class="h-6 w-6 cursor-pointer font-sm"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                style="stroke-width: 1"
+              >
+                <!-- Icon for light mode -->
+                <path
+                  class="hidden dark:inline text-white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+                <!-- Icon for dark mode -->
+                <path
+                  class="dark:hidden text-white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                />
+              </svg>
+            </li>
+
+            <li
+              class="w-8 h-8 bg-slate-300 rounded-full flex justify-center items-center font-exo text-xl font-bold"
+            >
+              L
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- action button -->
+      <section class="relative flex justify-center py-4">
+        <ul class="flex items-center gap-10">
+          <li
+            class="flex justify-center items-center gap-2 border rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover hover:text-white transition-all duration-300 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5A3.375 3.375 0 0 0 6.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0 0 15 2.25h-1.5a2.251 2.251 0 0 0-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 0 0-9-9Z"
+              />
+            </svg>
+            <span class="hidden lg:flex">Copy</span>
+          </li>
+          <li
+            class="flex justify-center items-center gap-2 border rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover hover:text-white transition-all duration-300 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+              />
+            </svg>
+
+            <span class="hidden lg:flex">Refresh</span>
+          </li>
+          <li
+            class="flex justify-center items-center gap-2 border rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover hover:text-white transition-all duration-300 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+
+            <span class="hidden lg:flex">New Mail</span>
+          </li>
+          <li
+            class="flex justify-center items-center gap-2 border rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover hover:text-white transition-all duration-300 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+              />
+            </svg>
+
+            <span class="hidden lg:flex">Delete Mail</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- body section -->
+      <section
+        class="relative box mx-4 mb-4 lg:h-[80vh] lg:overflow-y-scroll overflow-x-hidden bg-primary rounded-lg p-4 space-y-6"
+      >
+        <!-- color pattern -->
+        <div
+          class="absolute left-0 top-2/4 -translate-y-2/4 w-72 h-72 bg-purple-600 rounded-full blur-[150px] -z-10"
+        ></div>
+
+        <!-- Priyo mail bio -->
+        <div
+          class="max-w-[600px] mx-auto flex justify-center items-center flex-col"
+        >
+          <h2 class="text-3xl font-exo font-bold py-4">Priyo Mail</h2>
+          <p class="text-center text-lg">
+            Protect your personal email from spam, bots, phishing, and other
+            online threats with a temporary email address. No commitments, no
+            risks—just guaranteed security. Temp mail allows you to communicate
+            freely without exposing your real email, keeping you safe from
+            potential abuse and ensuring your privacy stays intact.
+          </p>
+        </div>
+
+        <!-- ads section -->
+        <div
+          class="w-full h-72 bg-[#84ace767] rounded-lg overflow-hidden flex justify-center items-center"
+        >
+          Ads Here...
+        </div>
+
+        <!-- blog section -->
+        <div class="grid grid-cols-3 lg:grid-flow-col gap-4">
+          <div
+            class="col-span-3 lg:col-span-1 w-full h-28 rounded-lg bg-[#84ace767]"
+          ></div>
+          <div
+            class="col-span-3 lg:col-span-1 w-full h-28 rounded-lg bg-[#84ace767]"
+          ></div>
+          <div
+            class="col-span-3 lg:col-span-1 w-full h-28 rounded-lg bg-[#84ace767]"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer
+      class="w-full h-[5vh] flex justify-center items-center lg:fixed left-0 bottom-0 lg:w-80 border-t lg:border-teal-50 border-t-slate-200 z-50"
+    >
+      <p>
+        © 2024
+        <a
+          href="#"
+          class="text-purple-500 hover:text-cyan-500 transition-all duration-500"
+          >Priyo Mail</a
+        >
+      </p>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

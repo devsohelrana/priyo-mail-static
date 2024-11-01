@@ -1,0 +1,16 @@
+{
+  "name": "temp-mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/app.css -o ./assets/css/app.css",
+    "watch": "tailwindcss -i ./src/app.css -o ./assets/css/app.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
