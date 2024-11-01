@@ -25,15 +25,16 @@
     <link rel="stylesheet" href="./assets/css/app.css" />
   </head>
 
-  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+  <body class="bg-white dark:bg-dark-primary text-gray-900 dark:text-white">
     <!-- Side bar section -->
     <header
       id="sideMenu"
-      class="relative hidden lg:block lg:fixed top-0 left-0 bottom-0 lg:w-80 bg-primary px-4"
+      class="relative hidden lg:block lg:fixed top-0 left-0 bottom-0 px-4 lg:w-80 bg-primary dark:bg-dark dark:text-white"
     >
       <div class="space-y-10">
         <div class="flex justify-between items-center gap-10 mt-5">
-          <h2
+          <a
+            href="#"
             class="font-exo text-3xl font-bold flex justify-start items-center gap-2"
           >
             <svg
@@ -42,7 +43,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-10 text-purple-600"
+              class="size-10 text-purple-600 dark:text-green-400"
             >
               <path
                 stroke-linecap="round"
@@ -52,10 +53,10 @@
             </svg>
 
             Priyo Mail
-          </h2>
+          </a>
 
           <!-- hum icon -->
-          <div id="closeIcon" class="flex lg:hidden">
+          <div id="closeIcon" class="flex lg:hidden cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -76,7 +77,7 @@
         <nav>
           <ul class="space-y-4">
             <li
-              class="bg-primary-hover text-white text-lg px-2 py-1 rounded-lg transition-all duration-300"
+              class="bg-primary-hover dark:bg-dark-hover text-white text-lg px-2 py-1 rounded-lg transition-all duration-300"
             >
               <a href="#" class="flex justify-start gap-2 font-poppins">
                 <svg
@@ -97,7 +98,7 @@
               </a>
             </li>
             <li
-              class="text-black text-lg px-2 py-1 rounded-lg hover:bg-primary-hover hover:text-white transition-all duration-300"
+              class="text-lg px-2 py-1 rounded-lg hover:bg-primary-hover dark:hover:bg-dark-hover hover:text-white transition-all duration-300"
             >
               <a href="#" class="flex justify-start gap-2 font-poppins">
                 <svg
@@ -119,7 +120,7 @@
               </a>
             </li>
             <li
-              class="text-black text-lg px-2 py-1 rounded-lg hover:bg-primary-hover hover:text-white transition-all duration-300"
+              class="text-lg px-2 py-1 rounded-lg hover:bg-primary-hover dark:hover:bg-dark-hover hover:text-white transition-all duration-300"
             >
               <a href="#" class="flex justify-start gap-2 font-poppins">
                 <svg
@@ -141,7 +142,7 @@
               </a>
             </li>
             <li
-              class="text-black text-lg px-2 py-1 rounded-lg hover:bg-primary-hover hover:text-white transition-all duration-300"
+              class="text-lg px-2 py-1 rounded-lg hover:bg-primary-hover dark:hover:bg-dark-hover hover:text-white transition-all duration-300"
             >
               <a href="#" class="flex justify-start gap-2 font-poppins">
                 <svg
@@ -163,7 +164,7 @@
               </a>
             </li>
             <li
-              class="text-black text-lg px-2 py-1 rounded-lg hover:bg-primary-hover hover:text-white transition-all duration-300"
+              class="text-lg px-2 py-1 rounded-lg hover:bg-primary-hover dark:hover:bg-dark-hover hover:text-white transition-all duration-300"
             >
               <a href="#" class="flex justify-start gap-2 font-poppins">
                 <svg
@@ -185,7 +186,7 @@
               </a>
             </li>
             <li
-              class="text-black text-lg px-2 py-1 rounded-lg hover:bg-primary-hover hover:text-white transition-all duration-300"
+              class="text-lg px-2 py-1 rounded-lg hover:bg-primary-hover dark:hover:bg-dark-hover hover:text-white transition-all duration-300"
             >
               <a href="#" class="flex justify-start gap-2 font-poppins">
                 <svg
@@ -220,7 +221,7 @@
 
       <!-- top bar -->
       <section
-        class="relative w-full h-16 bg-primary flex justify-between items-center px-4"
+        class="relative w-full h-16 bg-primary dark:bg-dark backdrop-blur-lg flex justify-between items-center px-4"
       >
         <!-- mail -->
         <div class="hidden lg:flex justify-start items-center gap-1">
@@ -243,7 +244,7 @@
         </div>
 
         <!-- hum icon -->
-        <div id="humIcon" class="flex lg:hidden">
+        <div id="humIcon" class="flex lg:hidden cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -264,20 +265,21 @@
         <div>
           <ul class="flex justify-end items-center gap-4">
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
+              <select
+                name=""
+                id=""
+                class="bg-[#374151] h-8 px-2 rounded-lg text-white"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"
-                />
-              </svg>
+                <option value="EN">EN</option>
+                <option value="EN">EN</option>
+                <option value="EN">EN</option>
+                <option value="EN">EN</option>
+                <option value="EN">EN</option>
+                <option value="EN">EN</option>
+                <option value="EN">EN</option>
+                <option value="EN">EN</option>
+                <option value="EN">EN</option>
+              </select>
             </li>
             <li
               id="darkModeToggle"
@@ -288,7 +290,7 @@
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                style="stroke-width: 1"
+                style="stroke-width: 2"
               >
                 <!-- Icon for light mode -->
                 <path
@@ -308,7 +310,7 @@
             </li>
 
             <li
-              class="w-8 h-8 bg-slate-300 rounded-full flex justify-center items-center font-exo text-xl font-bold"
+              class="w-8 h-8 bg-[#374151] text-white rounded-full flex justify-center items-center font-exo text-xl font-bold"
             >
               L
             </li>
@@ -320,7 +322,7 @@
       <section class="relative flex justify-center py-4">
         <ul class="flex items-center gap-10">
           <li
-            class="flex justify-center items-center gap-2 border rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover hover:text-white transition-all duration-300 cursor-pointer"
+            class="flex justify-center items-center gap-2 border border-dark-front rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover dark:hover:bg-dark-hover hover:text-white transition-all duration-300 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -339,7 +341,7 @@
             <span class="hidden lg:flex">Copy</span>
           </li>
           <li
-            class="flex justify-center items-center gap-2 border rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover hover:text-white transition-all duration-300 cursor-pointer"
+            class="flex justify-center items-center gap-2 border border-dark-front rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover dark:hover:bg-dark-hover hover:text-white transition-all duration-300 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -359,7 +361,7 @@
             <span class="hidden lg:flex">Refresh</span>
           </li>
           <li
-            class="flex justify-center items-center gap-2 border rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover hover:text-white transition-all duration-300 cursor-pointer"
+            class="flex justify-center items-center gap-2 border border-dark-front rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover dark:hover:bg-dark-hover hover:text-white transition-all duration-300 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -379,7 +381,7 @@
             <span class="hidden lg:flex">New Mail</span>
           </li>
           <li
-            class="flex justify-center items-center gap-2 border rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover hover:text-white transition-all duration-300 cursor-pointer"
+            class="flex justify-center items-center gap-2 border border-dark-front rounded-lg px-2 py-1 font-poppins font-medium hover:bg-primary-hover dark:hover:bg-dark-hover hover:text-white transition-all duration-300 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -403,7 +405,7 @@
 
       <!-- body section -->
       <section
-        class="relative box mx-4 mb-4 lg:h-[80vh] lg:overflow-y-scroll overflow-x-hidden bg-primary rounded-lg p-4 space-y-6"
+        class="relative box mx-4 mb-4 lg:h-[80vh] lg:overflow-y-scroll overflow-x-hidden bg-primary dark:bg-dark backdrop-blur-lg rounded-lg p-4 space-y-6"
       >
         <!-- color pattern -->
         <div
@@ -432,29 +434,89 @@
         </div>
 
         <!-- blog section -->
-        <div class="grid grid-cols-3 lg:grid-flow-col gap-4">
+        <div class="grid grid-flow-row-dense grid-cols-3 gap-2">
           <div
-            class="col-span-3 lg:col-span-1 w-full h-28 rounded-lg bg-[#84ace767]"
-          ></div>
+            class="p-6 col-span-3 xl:col-span-1 bg-white dark:bg-dark-primary rounded-xl shadow-lg flex items-center gap-x-4"
+          >
+            <div class="shrink-0">
+              <img
+                class="size-12"
+                src="./assets/img/1.webp"
+                alt="ChitChat Logo"
+              />
+            </div>
+            <div>
+              <a href="#">
+                <h2
+                  class="text-xl font-medium text-black dark:text-white line-clamp-1"
+                >
+                  Temporary mail forwarding service
+                </h2>
+              </a>
+              <p class="text-slate-500 dark:text-gray-100">
+                You have a new message!
+              </p>
+            </div>
+          </div>
           <div
-            class="col-span-3 lg:col-span-1 w-full h-28 rounded-lg bg-[#84ace767]"
-          ></div>
+            class="p-6 col-span-3 xl:col-span-1 bg-white dark:bg-dark-primary rounded-xl shadow-lg flex items-center gap-x-4"
+          >
+            <div class="shrink-0">
+              <img
+                class="size-12"
+                src="./assets/img/2.webp"
+                alt="ChitChat Logo"
+              />
+            </div>
+            <div>
+              <a href="#">
+                <h2
+                  class="text-xl font-medium text-black dark:text-white line-clamp-1"
+                >
+                  Temp mail extension chrome
+                </h2>
+              </a>
+              <p class="text-slate-500 dark:text-gray-100">
+                You have a new message!
+              </p>
+            </div>
+          </div>
           <div
-            class="col-span-3 lg:col-span-1 w-full h-28 rounded-lg bg-[#84ace767]"
-          ></div>
+            class="p-6 col-span-3 xl:col-span-1 bg-white dark:bg-dark-primary rounded-xl shadow-lg flex items-center gap-x-4"
+          >
+            <div class="shrink-0">
+              <img
+                class="size-12"
+                src="./assets/img/3.webp"
+                alt="ChitChat Logo"
+              />
+            </div>
+            <div>
+              <a href="#">
+                <h2
+                  class="text-xl font-medium text-black dark:text-white line-clamp-1"
+                >
+                  Common Email Problems and its Solution
+                </h2>
+              </a>
+              <p class="text-slate-500 dark:text-gray-100">
+                You have a new message!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- footer section -->
     <footer
-      class="w-full h-[5vh] flex justify-center items-center lg:fixed left-0 bottom-0 lg:w-80 border-t lg:border-teal-50 border-t-slate-200 z-50"
+      class="w-full h-[5vh] flex justify-center items-center lg:fixed left-0 bottom-0 lg:w-80 border-t lg:border-teal-50 dark:lg:border-dark-line border-t-slate-200 z-50 text-lg font-medium"
     >
       <p>
         © 2024
         <a
           href="#"
-          class="text-purple-500 hover:text-cyan-500 transition-all duration-500"
+          class="text-blue-600 dark:text-green-500 hover:text-cyan-500 transition-all duration-500"
           >Priyo Mail</a
         >
       </p>

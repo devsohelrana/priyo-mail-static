@@ -34,6 +34,13 @@ module.exports = {
           secondary: "#1d4ed8",
           hover: "#a78bfa",
         },
+        dark: {
+          DEFAULT: "#111827",
+          primary: "#374151",
+          hover: "#1F2937",
+          front: "#9CA3AF",
+          line: "#374151"
+        }
       },
     },
   },
